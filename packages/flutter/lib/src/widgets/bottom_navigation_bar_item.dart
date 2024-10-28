@@ -26,6 +26,7 @@ class BottomNavigationBarItem {
     this.key,
     required this.icon,
     this.label,
+    this.onPressed,
     Widget? activeIcon,
     this.backgroundColor,
     this.tooltip,
@@ -95,4 +96,6 @@ class BottomNavigationBarItem {
   ///
   /// Defaults to null, in which case the tooltip is not shown.
   final String? tooltip;
+
+  final VoidCallback? onPressed;
 }
